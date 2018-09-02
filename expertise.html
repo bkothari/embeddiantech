@@ -94,15 +94,15 @@
         <div class="col-md-3 pb-5 probootstrap-aside-stretch-left probootstrap-inside">
           <div class="mb-3 pt-5">
             <h2 class="h6">Expertise</h2>
-            <ul class="list-unstyled probootstrap-light mb-4">
-              <li class="active"><a href="#">Networking</a></li>
-              <li><a href="#">BSP & Firmware</a></li>
-              <li><a href="#">Multimedia</a></li>
-              <li><a href="#">Engineering Productivity</a></li>
+            <ul id='myid' class="list-unstyled probootstrap-light mb-4">
+              <li id='1' class="active"><a href="#">Networking</a></li>
+              <li id='2'><a href="#">BSP & Firmware</a></li>
+              <li id='3'><a href="#">Multimedia</a></li>
+              <li id='4'><a href="#">Engineering Productivity</a></li>
             </ul>
           </div>
         </div>
-        <div class="col-md-9 pl-md-5 pb-5 pl-0 probootstrap-inside">
+        <div id="networking" class="col-md-9 pl-md-5 pb-5 pl-0 probootstrap-inside">
           <h1 class="mt-4 mb-4">Networking</h1>
           <!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 
@@ -116,6 +116,16 @@
 
 	  <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>-->
         </div>
+        <div id="bsp" class="col-md-9 pl-md-5 pb-5 pl-0 probootstrap-inside">
+          <h1 class="mt-4 mb-4">BSP & Firmware</h1>
+        </div>
+        <div id="mm" class="col-md-9 pl-md-5 pb-5 pl-0 probootstrap-inside">
+          <h1 class="mt-4 mb-4">Multimedia</h1>
+        </div>
+        <div id="ep" class="col-md-9 pl-md-5 pb-5 pl-0 probootstrap-inside">
+          <h1 class="mt-4 mb-4">Engineering Productivity</h1>
+        </div>
+
       </div>
     </div>
   </section>
@@ -266,6 +276,41 @@
   <script src="js/jquery.animateNumber.min.js"></script>
 
   <script src="js/main.js"></script>
-  
+
+  <script>
+  	$("#myid li").click(function() {
+		$(this).addClass('active').siblings().removeClass('active');
+
+		var x = document.getElementById("networking");
+		var y = document.getElementById("bsp");
+		var z = document.getElementById("mm");
+		var a = document.getElementById("ep");
+		if(this.id == '1') {
+			x.style.display = "block";
+			y.style.display = "none";
+			z.style.display = "none";
+			a.style.display = "none";
+		}
+		else if(this.id == '2') {
+			x.style.display = "none";
+			y.style.display = "block";
+			z.style.display = "none";
+			a.style.display = "none";
+		}
+		else if(this.id == '3') {
+			x.style.display = "none";
+			y.style.display = "none";
+			z.style.display = "block";
+			a.style.display = "none";
+		}
+		else if(this.id == '4') {
+			x.style.display = "none";
+			y.style.display = "none";
+			z.style.display = "none";
+			a.style.display = "block";
+		}	
+	});
+  </script>
+
 </body>
 </html>
