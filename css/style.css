@@ -830,6 +830,114 @@ textarea {
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
 
+   /* Container needed to position the button. Adjust the width as needed */
+.container1 {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.image-button img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.image-button .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(250, 246, 246);
+  /* color: white; */
+  /* font-size: 16px; */
+  /* padding: 12px 24px; */
+  border: none;
+  cursor: pointer;
+  /* border-radius:  100px; */
+  background: transparent;
+  border: none !important;
+  font-size:0;
+}
+.image-button .btn1 {
+  position: absolute;
+  top: 30%;
+  left: 66%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(250, 246, 246);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 200px;
+  background: transparent;
+  border: none !important;
+  font-size:0;
+}
+.image-button .btn2 {
+  position: absolute;
+  top: 50%;
+  left: 82%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(250, 246, 246);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 200px;
+  background: transparent;
+  border: none !important;
+  font-size:0;
+}
+
+.image-button .btn3 {
+  position: absolute;
+  top: 85%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(250, 246, 246);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 200px;
+  background: transparent;
+  border: none !important;
+  font-size:0;
+}
+
+
+
+.image-button .btn4 {
+  position: absolute;
+  top: 85%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(250, 246, 246);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 200px;
+  background: transparent;
+  border: none !important;
+  font-size:0;
+}
+
+
+/* .image-button .btn:hover {
+  background-color: black;
+}  */
+
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
